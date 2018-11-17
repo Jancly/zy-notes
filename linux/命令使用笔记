@@ -1,0 +1,95 @@
+
+一、磁盘命令
+1、blkid 查看所列举出的磁盘
+2、fdisk -l查看整个电脑磁盘的内存
+3、删除分区 fdisk /dev/sda 然后输入m d 1:表示删除的是第一个分区,因为sda有很多个分区,
+   想删除那个分区就填那个数字 最后输入w,是写入的意思,就删除了
+ 
+4、df -h 查看当前系统磁盘使用
+5.systemctl restart lightdm   #重启桌面的命令
+
+echo "your passwd"|sudo -S your cmd
+
+
+二、创建
+１、查看帮助
+ｍan 命令　查看命令的参数
+less 文件名　　　查看文件的内容，可以分页查看
+tail 文件名　　查看文件的最后几行，一般用来查看报错的很多内容时，查看最后面的信息
+
+mkdir chen 创建chen文件夹　man mkdir 查看ｍkdir的参数
+mkdir -p a/b/c创建多级的文件夹
+touch chen  创建chen文档
+cp 要复制的文件 复制到哪里
+rm -rf /var/log/http(http文件路径)  #删除/var/log/http目录以及其下所有文件和文件夹
+   -r：表示向下递归，不管有多少级目录，一并删除，　-f：表示直接强行删除，没有任何提示
+rm -f　/var/log/a.txt(表示强行删除a.txt文件)
+mv 要移动的文件或软件包名 存放文件的路径
+du -sh 目录路劲  #查看目录大小
+
+三、解压与压缩
+tar -xzvf 包名 是解压.tar.gz软件包
+tar -xzvf *.tar.gz(包名) -C/home/deepin(解压到这个文件夹下)
+tar -xf 解压.tar.gz软件包
+tar -cvf text.tar ./* 打包当前目录下的所有文件，包名为text.tar
+tar -zcvf test.tar.gz ./* 压缩当前目录下的所有文件
+unzip .zip包 /解压到的路径
+
+
+四、安装与卸载
+卸载  dpkg -e 软件包名  如：dpkg -e software
+安装  dpkg -i ded软件包名  如：dpkg -i sofware-1.2.3-1.ded
+clear 或者Ctrl+L快捷键 表示清除终端的命令
+
+五、快捷键
+Ctrl+L 清空终端的内容
+
+eclipse的快捷键使用
+//块编辑 alt+shift +a
+// 变大写 ctrl+shift+x
+// 变小写 ctrl+shift+y
+// 向下复制一行   alt+ctrl+↓
+// 向下添加一个空行 shift + enter
+// 向上添加一个空行 ctrl+shift + enter
+// 删除一行 选中行  ctrl+d
+// 注释或者去掉注释 ctrl+/
+// 向下移动一行 alt + ↓
+Ctrl + n 新建
+Ctrl+shift+f 整理代码
+Ctrl+shift+o 导包，就是导入要用的包
+Ctrl + / 单行注释，再次按就取消注释
+Ctrl+shift+/ 多行注释
+Ctrl+shift+\ 取消多行注释
+Ctrl+shift+t 查找具体的类
+Ctrl + o 查找具体类的具体方法
+Ctrl + d 删除代码
+Alt+shift+m 抽取方法
+Alt+shift+r 改名
+Alt+/： 起提示作用
+main+alt+/,Syso+alt+/：给出其他提示
+代码上下移动：选中代码alt+上/下箭头
+查看源代码：选中类名（F3或者Ctrl+鼠标点击）
+给建议：Ctrl+1：根据右边生成左边的数据类型，生成方法
+alt+shift+s，再+c，根据父类生成空参构造
+alt+shift+s，再+o，根据本地字段(成员变量)生成有参构造
+alt+shift+s，再+r，生成set和get方法
+补充输出语句，选中需要输出的部分，然后alt+/选择最后一项即可
+修改eclipse编辑器字体大小的步骤Window->General->Colors and Fonts->Basic->Text Font
+
+ps -ef 列出所有进程 
+六、编辑器
+vim 使用  进去按i或者a编辑然后按Esc退出编辑，输入冒号 ：w   保存 输入冒号   ：q  退出编辑器 或者：x退出,；
+     如果权限不够,一般不能保存,这里使用:q!强制退出,或者使用  :wq! 强制保存退出,  
+     在vim编辑器中,yy命令是复制或拷贝当前行
+     dd → 删除当前行，并把删除的行存到剪贴板里
+     p → 粘贴剪贴板或者复制的命令
+     gg →   跳到当前编辑内容的首行
+nano 也是一个编辑器，也很好用
+init 3是切换到终端命令模式，init 5切换到桌面模式，如果想启动就进入命令模式就进入/etc/inittab 把5改成3
+
+VMware Workstation  5A02H-AU243-TZJ49-GTC7K-3C61N
+
+解决jdk报错的问题
+全局属性Project>preferences>java>Compiler>Errors/Warnings>把右侧的【Deprecated and restricted API>Forbidden reference的Error】置为【Warning】
+
+
