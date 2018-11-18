@@ -1,0 +1,35 @@
+一.快捷键
+eclipse的快捷键使用
+//块编辑 alt+shift +a
+// 变大写 ctrl+shift+x
+// 变小写 ctrl+shift+y
+// 向下复制一行   alt+ctrl+↓
+// 向下添加一个空行 shift + enter
+// 向上添加一个空行 ctrl+shift + enter
+// 删除一行 选中行  ctrl+d
+// 注释或者去掉注释 ctrl+/
+// 向下移动一行 alt + ↓
+Ctrl + n 新建
+Ctrl+shift+f 整理代码
+Ctrl+shift+o 导包，就是导入要用的包
+Ctrl + / 单行注释，再次按就取消注释
+Ctrl+shift+/ 多行注释
+Ctrl+shift+\ 取消多行注释
+Ctrl+shift+t 查找具体的类
+Ctrl + o 查找具体类的具体方法
+Ctrl + d 删除代码
+Alt+shift+m 抽取方法
+Alt+shift+r 改名
+Alt+/： 起提示作用
+main+alt+/,Syso+alt+/：给出其他提示
+代码上下移动：选中代码alt+上/下箭头
+查看源代码：选中类名（F3或者Ctrl+鼠标点击）
+给建议：Ctrl+1：根据右边生成左边的数据类型，生成方法
+alt+shift+s，再+c，根据父类生成空参构造
+alt+shift+s，再+o，根据本地字段(成员变量)生成有参构造
+alt+shift+s，再+r，生成set和get方法
+补充输出语句，选中需要输出的部分，然后alt+/选择最后一项即可
+修改eclipse编辑器字体大小的步骤Window->General->Colors and Fonts->Basic->Text Font
+
+
+
