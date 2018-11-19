@@ -1,0 +1,7 @@
+一. 关于deepin点击旋转按钮黑屏
+  点击旋转按钮黑屏之后,要使用一个拓展屏,接上
+  进入/home/deepin/.config/deepin/startdde目录
+  修改display.json里面的几个参数,是在我的设置里面
+  "Rotation":1,"Reflect":0,"RefreshRate":60
+
+

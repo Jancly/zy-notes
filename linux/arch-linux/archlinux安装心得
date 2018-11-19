@@ -44,6 +44,116 @@
 5. 安装arch linux 时,分区,要分对,目前我只知道,安装linux 系统是分两个区,
    一个是交换分区,是另外一种格式化,还有就是分一个根分区,内存30g左右,根分区必须挂载到/mnt这个目录下,否则安装安装基本包时就会出错
 
+6.关于wifi-ment 连接问题
+  当执行命令sudo systemctl enable NetworkManager,自动开启这个服务时,
+  再用WiFi-ment 连接,会报错,报错应该是提示
+
+  sudo pacman -S wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei ttf-arphic-ukai ttf-arphic-uming adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts-cjk
+
+7. 安装火狐
+很多人刚安装好系统之后，刚开始内置的浏览器是火狐的英文版，很多时候因为需要账号同步的原因需要国内版本的火狐浏览器，这个时候我们应该怎么操作呢？
+
+其实也非常的简单
+
+首先我们 输入命令
+1
+	
+pacman -S firefox
+
+ 中间会提示有冲突，这个时候我们删除就行
+
+ 这样我们就安装好了
+
+然后我们再安装中文语言包
+1
+	
+pacman -S firefox-i18n-zh-cn
+
+
+
+
+
+
+8.输入法
+ 1.搜狗输入法
+   第一步,首先要配置下载搜狗输入法源
+   我们这里使用的是清华源，清华源的好处上面我说了有一些国内常用的中文软件这些，我们换成清华cnarch linux源的好处就是Arch Linux 
+    中文社区驱动的非官方用户仓库。包含中文用户常用软件、工具、字体/美化包等。
+
+具体操作方法：
+
+1
+# sudo nano /etc/pacman.conf
+文件末尾添加以下两行：
+
+1
+2
+[archlinuxcn]
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+ 
+
+然后很多教程在这里配置就结束了，就遇到一些问题，比如我们安装某些软件的时候会提示gpg签名错误损坏等这些，
+ 这个是因为没有导入key的原因，我们需要导入一下GPG KEY，具体操作就是
+安装archlinuxcn-keyring 包导入 GPG key。
+1
+# sudo pacman -S archlinuxcn-keyring
+如果不使用这条命令进行签名,下载搜狗拼音时,会出现错误
+ 我们再更新一下源：
+1
+# sudo pacman -Sy
+
+我们在使用电脑的时候很多时候需要输入中文，这个时候如果没有一个中文输入法那么就是一件非常尴尬的事情了。
+ 我门现在开始在我们的archlinux来安装sougou输入法
+
+
+
+2.安装
+（1）安装Fcitx
+
+由于搜狗拼音输入法依赖于Fcitx，在安装搜狗拼音输入法之前，需要先行安装Fcitx，在终端窗口下直接输入：
+
+
+1
+# sudo pacman -S fcitx
+即可完成安装，需要注意的是，仅仅安装这一项是不够的，这样在安装完成之后，Fcitx基本上是处于不可用的状态，我们还需要安装以下几个包：
+
+1
+2
+# sudo pacman -S fcitx-configtool
+# sudo pacman -S fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5
+（2）安装搜狗输入法
+
+在第一步当中我们已经正确的配置了有搜狗输入法的源，所以我们在这里直接输入：
+
+1
+# sudo pacman -S fcitx-sogoupinyin
+3.配置
+
+安装完之后我们因为我们的Linux系统配置文件的原因，我们还不能直接使用搜狗输入法，这个时候我们就需要进行配置
+
+我们需要来编辑~/.xprofile
+这里说一下~/.xprofile目录就是/home/loveyao/下的文件,如果没有就创建一个
+
+1
+# sudo nano ~/.xprofile
+1
+# nano  ~/.xprofile
+在其末尾添加以下几行：
+
+1
+2
+3
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+ 这个时候就配置完成了，我们接下来重启一下我们的电脑就可以了使用搜狗输入法了。
+
+在上面安装搜狗输入法时,出现一个错误,是搜狗输入法里面的字乱码
+
+然后可以改用谷歌拼音
+
+  sudo pacman -S fcitx-googlepinyin,下载之后,直接重启就可以用
+
 
 
 

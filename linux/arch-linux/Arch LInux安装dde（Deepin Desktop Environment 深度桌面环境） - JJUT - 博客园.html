@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://www.cnblogs.com/JJUT/p/9956348.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="origin">
+<title>Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园</title>
+<meta property="og:description" content="我一直比较推荐一些Linux新手使用Deepin Linux，因为我认为这种尽量的follow Windows的系统至少对于新手来说是比较的友好的，而且预装了QQ 火狐浏览器中文版，甚至还移植了像36">
+<link type="text/css" rel="stylesheet" href="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/bundle-SimpleMemory.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/bundle-SimpleMemory-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/JJUT/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/JJUT/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/JJUT/wlwmanifest.xml">
+<script src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/f.txt"></script><script src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/pubads_impl_rendering_275.js"></script><script async="" src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/analytics.js"></script><script src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">var currentBlogApp = 'JJUT', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/blog-common.js" type="text/javascript"></script>
+<link rel="preload" href="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/f(1).txt" as="script"><script type="text/javascript" src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/f(1).txt"></script><script src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/pubads_impl_275.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-31/html/container.html"></head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/JJUT/"><img id="blogLogo" src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/JJUT/">JJUT的博客 自由的</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/JJUT/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/JJUT">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/JJUT/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/JJUT/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 5&nbsp; </span>
+<span id="stats_article_count">文章 - 1&nbsp; </span>
+<span id="stats-comment_count">评论 - 0</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/JJUT/p/9956348.html">Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境）</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p>我一直比较推荐一些Linux新手使用Deepin Linux，因为我认为这种尽量的<span class="RichText ztext CopyrightRichText-richText">follow </span>Windows的系统至少对于新手来说是比较的友好的，而且预装了QQ 火狐浏览器中文版，甚至还移植了像360安全浏览器这些，自带的应用商店等等，去掉了很多至少对于一般的Linux用户，初学者这些用不到的组件 还是相对很友好的，也就是开箱即用的。</p>
+<p>当然我一直用deepin还有一个很重要的原因就是我认为这个系统的UI是非常好看的，可能是我接受不了LXDE Gnome这些的原生界面吧！至少我觉得如果说是还需要美化等等的这些真的是降低自己的效率的。</p>
+<p>那么就开始咱们今天的内容吧！</p>
+<p>因为dde和Gnome并不兼容，如果你原先安装的环境是Gnome的话，那么需要先移除所有gnome相关的包，另外，在这个过程中networkmanager也会被移除，一定要再次安装，否则会相当麻烦。</p>
+<p><strong>1.首先我们安装基本环境：</strong></p>
+<div class="cnblogs_Highlighter sh-gutter">
+<div><div id="highlighter_179669" class="syntaxhighlighter  bash"><div class="toolbar"><span><a href="https://www.cnblogs.com/JJUT/p/9956348.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="bash comments"># sudo pacman -S deepin deepin-extra lightdm lightdm-deepin-greeter</code></div></div></td></tr></tbody></table></div></div>
+</div>
+<p><strong>&nbsp;2.我们安装相关的依赖组件：</strong></p>
+<p>虽然说deepin-extra已经包含了deepin特有的一些应用，而且还挺简洁的，就和我上面说得，如果过多的组件会导致新手无从下手，不过，有些应用依旧缺失，需要补救一下。</p>
+<div class="cnblogs_Highlighter sh-gutter">
+<div><div id="highlighter_834269" class="syntaxhighlighter  bash"><div class="toolbar"><span><a href="https://www.cnblogs.com/JJUT/p/9956348.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="bash comments"># sudo pacman -S file-roller evince gedit thunderbird gpicview</code></div><div class="line number2 index1 alt1"><code class="bash comments"># sudo pacman -S unrar unzip p7zip</code></div></div></td></tr></tbody></table></div></div>
+</div>
+<p>&nbsp;在安装完dde后，可能会遇到无法将语言改为中文的情况，只要删除～/.pam_environment文件即可。</p>
+<div class="cnblogs_Highlighter sh-gutter">
+<div><div id="highlighter_166327" class="syntaxhighlighter  bash"><div class="toolbar"><span><a href="https://www.cnblogs.com/JJUT/p/9956348.html#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="bash comments"># sudo rm ～/.pam_environment</code></div></div></td></tr></tbody></table></div></div>
+</div>
+<p><strong>&nbsp;3.安装浏览器</strong></p>
+<p>浏览器我觉得都差不多，这个可以参考一下我上一个教程</p>
+<h3><a href="https://www.cnblogs.com/JJUT/articles/9071178.html" target="_blank">Arch Linux安装Firefox 火狐中文版</a></h3>
+<p><strong>4.最后</strong></p>
+<p>接下来我们就是直接重启我们的机器就可以了，在开机的时候，登陆界面会在左下角或者右下角会有一个切换桌面环境的选项，到时候可以注意一下。</p>
+<p>登陆的时候使用非root用户登陆。</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(9956348,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;ec366293-83f6-e611-845c-ac853d9f53ac&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/JJUT/" target="_blank"><img src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/20180520204556.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/JJUT/">JJUT</a><br>
+            <a href="http://home.cnblogs.com/u/JJUT/followees">关注 - 0</a><br>
+            <a href="http://home.cnblogs.com/u/JJUT/followers">粉丝 - 0</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;ec366293-83f6-e611-845c-ac853d9f53ac&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(9956348,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(9956348,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="https://www.cnblogs.com/JJUT/p/9956183.html" class="p_n_p_prefix">« </a> 上一篇：<a href="https://www.cnblogs.com/JJUT/p/9956183.html" title="发布于2018-11-14 09:21">为Arch Linux更换Archlinuxcn源（清华源）</a><br><a href="https://www.cnblogs.com/JJUT/p/9956426.html" class="p_n_p_prefix">» </a> 下一篇：<a href="https://www.cnblogs.com/JJUT/p/9956426.html" title="发布于2018-11-14 10:03">为Arch Linux安装搜狗输入法</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2018-11-14 09:50</span> <a href="https://www.cnblogs.com/JJUT/">JJUT</a> 阅读(<span id="post_view_count">29</span>) 评论(<span id="post_comment_count">0</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=9956348" rel="nofollow">编辑</a> <a href="https://www.cnblogs.com/JJUT/p/9956348.html#" onclick="AddToWz(9956348);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=433360,cb_entryId=9956348,cb_blogApp=currentBlogApp,cb_blogUserGuid='ec366293-83f6-e611-845c-ac853d9f53ac',cb_entryCreatedDate='2018/11/14 9:50:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="https://www.cnblogs.com/JJUT/p/9956348.html#" onclick="return RefreshPage();">刷新页面</a><a href="https://www.cnblogs.com/JJUT/p/9956348.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>相关博文：</b><br>·  <a href="https://www.cnblogs.com/pangblog/p/3262904.html" target="_blank" onclick="clickRecomItmem(3262904,&#39;AL4eoRhwuhTlZfDmccdBgHeEy/ESwZvHbxwzOFqZ3+wimbippahK32ec5vTKfoI9q2q3sRmr/8bm//Nu4fhAO5/IApDBp40bzRCGCDLl6WLAcd3q+/jCbjydcsTB2txmsv6vW9meufekFcFsNdNigg==&#39;)">桌面环境与桌面搜索Desktop Search tools</a><br>·  <a href="https://www.cnblogs.com/wbin91/p/3808766.html" target="_blank" onclick="clickRecomItmem(3808766,&#39;O3SYhDwe/ZRGTihwNQwRjwnja3MbrexC/cv3PWkgKXzQYzyqNeRTysxGXbm+/pvTEKhS32dyRm2JzGi73ouDA0SoF/cnrFsQGHiORLmeKGxQN+QgsGY70jiXXJfkd09HS7qpDz9DC+U926He1sanfQ==&#39;)">Arch Linux 安装记录</a><br>·  <a href="https://www.cnblogs.com/mimiorz/p/9464059.html" target="_blank" onclick="clickRecomItmem(9464059,&#39;fn4sYwLri5VJSf0IXdPLbfIwPf1RRULr++l1xF5xPIHDnTConXPt1unf+wwrG/Zmr3tWkXgnDaQOopLJGx+QjRoEEpuSHdICGi9htCDk0U/QAYmN/oJD9ekX26dyK2JVvGPg46z0+fW6MHayV1a3dw==&#39;)">安装deepin linux</a><br>·  <a href="https://www.cnblogs.com/tenlee/p/4420109.html" target="_blank" onclick="clickRecomItmem(4420109,&#39;8/a1HPDaIOftXgPqtoK9ayrP2KqdADFtEuOWIFgvTXunWDyajwKK7oWoLHZAOnPKFTNhAOPtCBBbWxzeISbtvhmRaL/+UC5/m8yS6cu5VbbnDTGCkAbG2eFCWrVSoZe4KQ6nPX9v5d0Sv90DBOtFwA==&#39;)">Ubuntu安装Deepin的深度影音，深度音乐步骤</a><br>·  <a href="https://www.cnblogs.com/wanghuaijun/p/7783427.html" target="_blank" onclick="clickRecomItmem(7783427,&#39;HqJDDUWh8P39vI8WF8qTgHtvFfNxEXKWZNDYhOkqnNqAriJhb1No2qVzOaPb8NhIHAM1O0D3ikS2OOr2tvPA0XWfAJbc+2XHHD6tRLPKPQLcV9dp7bsEyAC+8PZEQUl4ywFZwTaKYiUk+mZp9ljf1Q==&#39;)">深度Linux Deepin系统安装教程使用体验</a><br></div></div>
+<script async="async" src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/gpt.js"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<div id="cnblogs_c2" class="c_ad_block">
+    <div id="div-gpt-ad-1539008685004-0" style="height: 60px; width: 468px;">
+    <script>
+    if (new Date() >= new Date(2018, 9, 13)) {
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539008685004-0'); });
+    }
+    </script>
+    <div id="google_ads_iframe_/1090369/C2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1090369/C2_0" title="3rd party ad content" name="google_ads_iframe_/1090369/C2_0" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境） - JJUT - 博客园_files/saved_resource.html"></iframe></div></div>
+</div>
+<div id="under_post_kb"><div class="itnews c_ad_block"><b>最新新闻</b>：<br> ·  <a href="https://news.cnblogs.com/n/612641/" target="_blank">彭博创始人向母校捐赠125亿元 未来或角逐美国总统</a><br> ·  <a href="https://news.cnblogs.com/n/612629/" target="_blank">华创熊伟铭：百度自动驾驶做晚了 应做大公司该做的事</a><br> ·  <a href="https://news.cnblogs.com/n/612635/" target="_blank">双十一，我在上海送快递</a><br> ·  <a href="https://news.cnblogs.com/n/612634/" target="_blank">谷歌拟推出用户实名评价搜索结果功能</a><br> ·  <a href="https://news.cnblogs.com/n/612633/" target="_blank">乐视网回应被王思聪旗下公司追债：将积极应诉</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/JJUT/">JJUT</a><br>园龄：<a href="https://home.cnblogs.com/u/JJUT/" title="入园时间：2017-02-19">1年9个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/JJUT/followers/">0</a><br>关注：<a href="https://home.cnblogs.com/u/JJUT/followees/">0</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;ec366293-83f6-e611-845c-ac853d9f53ac&#39;)">+加关注</a></div><script>getFollowStatus('ec366293-83f6-e611-845c-ac853d9f53ac')</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2018/10/01&#39;);return false;">&lt;</a></td><td align="center">2018年11月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2018/12/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td align="center">2</td><td class="CalWeekendDay" align="center">3</td></tr><tr><td class="CalWeekendDay" align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td class="CalWeekendDay" align="center">10</td></tr><tr><td class="CalWeekendDay" align="center">11</td><td align="center">12</td><td align="center">13</td><td align="center"><a href="https://www.cnblogs.com/JJUT/archive/2018/11/14.html"><u>14</u></a></td><td align="center">15</td><td align="center">16</td><td class="CalWeekendDay" align="center">17</td></tr><tr><td class="CalWeekendDay" align="center">18</td><td class="CalTodayDay" align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td class="CalWeekendDay" align="center">24</td></tr><tr><td class="CalWeekendDay" align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td class="CalOtherMonthDay" align="center">1</td></tr><tr><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/JJUT/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="https://www.cnblogs.com/JJUT/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="https://www.cnblogs.com/JJUT/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="https://www.cnblogs.com/JJUT/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="https://www.cnblogs.com/JJUT/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block"></div><div id="sidebar_categories">
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="https://www.cnblogs.com/JJUT/archive/2018/11.html">2018年11月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="https://www.cnblogs.com/JJUT/archive/2018/05.html">2018年5月 (2)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap" style="display: none;">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"></div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="https://www.cnblogs.com/JJUT/p/9071208.html">1. Arch Linux安装Firefox 火狐中文版(60)</a></li><li><a href="https://www.cnblogs.com/JJUT/p/9956348.html">2. Arch LInux安装dde（Deepin Desktop Environment 深度桌面环境）(28)</a></li><li><a href="https://www.cnblogs.com/JJUT/p/9956183.html">3. 为Arch Linux更换Archlinuxcn源（清华源）(27)</a></li><li><a href="https://www.cnblogs.com/JJUT/p/9075620.html">4. 为archlinux选择国内镜像(22)</a></li><li><a href="https://www.cnblogs.com/JJUT/p/9956426.html">5. 为Arch Linux安装搜狗输入法(7)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap" style="display: none;">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap" style="display: none;">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2018 JJUT
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>
