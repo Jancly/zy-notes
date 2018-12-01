@@ -10,6 +10,9 @@
 
 echo "your passwd"|sudo -S your cmd
 
+5.切换超级权限和普通用户权限
+   直接su 命令,切换到超级权限,su deepin(用户名),想切换到那个用户名就填那个用户
+
 
 二、创建
 １、查看帮助

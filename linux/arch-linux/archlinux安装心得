@@ -11,6 +11,9 @@
 3.换源时,把中国的源用编辑器复制粘贴到第一行就行了
 下面还有一个引导
 
+
+
+
 4. 新建用户
    在这之前所有操作都是以root用户的身份进行的，由于root的权限过高，日常使用root用户是不安全的。
    Linux为我们提供了强大的用户与组的权限管理，提高了整个系统的安全性。这里我们就来新建一个用户。
@@ -44,11 +47,15 @@
 5. 安装arch linux 时,分区,要分对,目前我只知道,安装linux 系统是分两个区,
    一个是交换分区,是另外一种格式化,还有就是分一个根分区,内存30g左右,根分区必须挂载到/mnt这个目录下,否则安装安装基本包时就会出错
 
+
+
 6.关于wifi-ment 连接问题
   当执行命令sudo systemctl enable NetworkManager,自动开启这个服务时,
   再用WiFi-ment 连接,会报错,报错应该是提示
 
   sudo pacman -S wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei ttf-arphic-ukai ttf-arphic-uming adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts-cjk
+
+
 
 7. 安装火狐
 很多人刚安装好系统之后，刚开始内置的浏览器是火狐的英文版，很多时候因为需要账号同步的原因需要国内版本的火狐浏览器，这个时候我们应该怎么操作呢？
