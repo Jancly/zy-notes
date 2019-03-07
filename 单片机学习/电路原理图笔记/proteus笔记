@@ -1,0 +1,4 @@
+当调出自己想要用的元器件时,命名同一个就可以连线了,找到Property Assignment Tool工具,
+然后在Sting右边里填net=p0.#,就可以按顺序定义元器件名字了
+调出电源: 点击鼠标右键,找到Place里的Terminal的POWER就能调出电源了
+

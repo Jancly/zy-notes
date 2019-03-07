@@ -1,0 +1,15 @@
+首先,安装 dxp软件 Altium公司:常用 Protel和Altium Designer 还有其他公司的产品
+MentorGraphics公司产品:PADS、MentorWG    Cadence公司产品:OrCAD、Allegro SPB.
+ 
+ 新建一个PCB工程:File→Project→PCB Project  把工程保存到一个文件夹.
+ 添加所需文件到工程中: Project→Add New to Project中的四个工程:1.Schematic(原理图)  2.PCB  3.Schematic Library  4.PCB Library
+   Projec->Add Existing to Project->...添加已有的工程
+      原理图 *.SchDoc、原理图库 *.SchLib、
+      PCB图 *.PcbDoc、PCB图库 *.PcbLib、
+      (Protel99: *.sch、*.pcb、*.lib)  建完四个工程后都要保存到大工程目录下
+
+      画原理图时,旋转元器件 鼠标点击元器件,按空格旋转.
+      画好封装进库时,在左下角里的按钮
+
+  
+

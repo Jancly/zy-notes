@@ -1,0 +1,11 @@
+ try {
+            //1 获得请求的method的名称
+            String methodName = req.getParameter("method");
+            //2 获得当前对象的class        this->哪个类继承BaseServlet就代表那个对象
+            Class clazz = this.getClass();
+            //3 获得当前字节码中指定的方法
+            Method method = clazz.getMethod(methodName, HttpServletRequest.class,HttpServletResponse.class);
+            //4 执行获得的方法
+            method.invoke(this, req,resp);
+
+

@@ -1,0 +1,1 @@
+cat /proc/cpuinfo   在/proc/cpuinfo文件夹里详细列出来cpu的信息
