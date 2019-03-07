@@ -1,0 +1,2 @@
+想用girhub发布个人博客,首先要创建一个仓库,然后点击设置,在Github Pages里Source设置为master branch,
+然后访问链接,就可以访问仓库里的index.html
